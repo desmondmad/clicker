@@ -39,12 +39,26 @@ public class Counter {
     // the value of this counter to 0.
     // Test by calling from App start()
 
+    public void reset(){
+        count = 0;
+        System.out.println("Count Reset: Count = " + count);
+    }
+
 
     //TODO
     // Implement an undo() method that will reduce the count by one.
     // Do not allow the count to become negative.
     // Print the value of count from the method after the decrement.
     // Call this undo() method from App start().
+
+    public void undo() {
+        if (count > 0){
+            --count;
+        } else {
+            System.out.println("Count cannot become a negative");
+        }
+        System.out.println("Undo Click: Count = " + count);
+    }
 
 
 
