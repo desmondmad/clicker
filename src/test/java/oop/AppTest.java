@@ -23,6 +23,20 @@ public class AppTest
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void clickLimit() {
+        Counter counter = new Counter(4);
+        counter.click();
+        counter.click();
+        counter.click();
+        counter.click();
+        counter.click();
+        counter.click();   // should increment by 1
+        int expected = 5;
+        int actual = counter.getCount();
+        assertEquals(expected, actual);
+    }
+
     //TODO add a test for Counter undo()
     @Test
     public void undo() {

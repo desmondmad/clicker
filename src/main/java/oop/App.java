@@ -15,8 +15,11 @@ public class App
     public void start() {
         System.out.println("\n*** Counter App ***");
 
-        Counter myCounter = new Counter(10);
+        Counter myCounter = new Counter(4);
         myCounter.display();
+        myCounter.click();
+        myCounter.click();
+        myCounter.click();
         myCounter.click();
         myCounter.click();
         myCounter.click();
